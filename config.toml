@@ -1,4 +1,4 @@
-baseURL = "dreamsfutureblog.utools.club/"
+baseURL = "https://dreamsfuture.github.io"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 
@@ -24,9 +24,6 @@ copyright = "Copyright All Reserved."
 enableRobotsTXT = true
 
 
-[author]
-  name = " Dreamsfuture"
-  homepage = "https://dreamsfutureblog.utools.club/"
 
 [params]
   backgroundImage = "img/background.jpg"
