@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AI领域常用的各种算法评价指标 | Dreamsfuture</title>
+
+    
+<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+<meta name="author" content="Dreamsfuture" />
+<meta name="description" content="AI领域常用的各种算法评价指标，TP, FP, FN, TN &amp;hellip;&amp;hellip;
+" />
+
+
+
+<meta name="generator" content="Hugo 0.74.3" />
+
+<link rel="canonical" href="https://dreamsfuture.github.io/posts/AI%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E5%90%84%E7%A7%8D%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" />
+
+
+<meta property="og:title" content="AI领域常用的各种算法评价指标" />
+<meta property="og:description" content="
+AI领域常用的各种算法评价指标，TP, FP, FN, TN &hellip;&hellip;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dreamsfuture.github.io/posts/AI%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E5%90%84%E7%A7%8D%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" />
+<meta property="article:published_time" content="2020-07-31T11:18:32+08:00" />
+<meta property="article:modified_time" content="2020-07-31T11:18:32+08:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AI领域常用的各种算法评价指标"/>
+<meta name="twitter:description" content="
+AI领域常用的各种算法评价指标，TP, FP, FN, TN &hellip;&hellip;"/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+
+
+
+    
+<link rel="stylesheet" href="/css/github-markdown.css" />
+
+  </head>
+
+  
+  <body style="background-image: url(img/background.jpg);">
+  
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="翻转！"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="首页" onclick="window.location.href = 'https:\/\/dreamsfuture.github.io'"></i>
+  </div>
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment" id="dream-save-post-as-img">
+      <header style="margin-top: 0 !important;">
+        <h1 class="ui large header">
+          AI领域常用的各种算法评价指标
+          <div class="sub header">
+            @
+            
+              
+                Dreamsfuture
+              
+            
+            · Friday, Jul 31, 2020
+            · 1 分钟阅读
+            · 更新于 Jul 31, 2020
+          </div>
+        </h1>
+      </header>
+
+      
+        <img class="ui image" style="margin-top: 2rem;" src="/img/performance_indexes.jpg" />
+      
+
+      <article style="margin-top: 2rem;"><!-- raw HTML omitted -->
+<p>AI领域常用的各种算法评价指标，TP, FP, FN, TN &hellip;&hellip;</p>
+<h2 id="1-tpfpfntn-precision-recall指标理解">1. TP、FP、FN、TN, precision, recall指标理解</h2>
+<p><strong>现在有一张小狗图和一张不是狗的图，输入到深度学习模型中，等待输出结果</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center">Positive(输出为狗)</th>
+<th align="center">Negative（输出不为狗）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">True （输入为狗）</td>
+<td align="center"><strong>TP</strong></td>
+<td align="center">TN</td>
+</tr>
+<tr>
+<td align="left">False（输入不为狗）</td>
+<td align="center">FP</td>
+<td align="center">FN</td>
+</tr>
+</tbody>
+</table>
+<p>$$查准率 precision = \frac{TP}{TP+FP} = \frac{输入为狗，输出为狗样本数量}{ 所有类输入，这些类输出为狗的样本数量}$$</p>
+<p>$$查全率 recall = \frac{TP}{TP+FN} = \frac{输入为狗，输出也为狗的样本数量}{所有类别输入，这些类别输出也是自身类别的样本数量}$$</p>
+<h2 id="2-交并比intersection-over-unioniou">2. 交并比（Intersection-over-Union，IoU）</h2>
+<p>在目标检测和识别领域用来评价检测识别率的指标之一。</p>
+<p>$$IoU = \frac{Area of Overlap}{Area of Union}=\frac{交集}{并集}$$</p>
+<p>可以参考下面两张图来进行识别</p>
+<p><img src="data:image/png;base64,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" alt="area of overlap"></p>
+<p><img src="data:image/png;base64,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" alt="area of union"></p>
+<p>参考文献：<a href="https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/">交并比详细解释可以参考这边英文文章</a></p>
+<p><a href="https://juejin.im/post/5a6721bd518825733201c4a2">使用markdown写数学公式</a></p></article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+        
+          <a class="ui label" href="/tags/Machine-Learning" title="Machine-Learning">Machine-Learning</a>
+        
+          <a class="ui label" href="/tags/Deep-Learning" title="Deep-Learning">Deep-Learning</a>
+        
+      
+      <div
+        class="ui label"
+        style="float: right; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>保存为图片
+      </div>
+    </footer>
+
+    
+      <footer class="ui attached segment">
+        Copyright All Reserved.
+      </footer>
+    
+
+    
+      <footer class="ui bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+        <div id="disqus_thread"></div>
+        <script>
+          
+
+
+          var disqus_config = function () {
+            this.page.url = 'https:\/\/dreamsfuture.github.io\/posts\/AI%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E5%90%84%E7%A7%8D%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87\/';  
+            this.page.identifier = '\/posts\/AI%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E5%90%84%E7%A7%8D%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87\/'; 
+          };
+
+          (function() { 
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + 'dreamsfuture' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </footer>
+    
+    
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+        <img src="/img/avatar.jpg">
+      
+    </div>
+
+    
+    <div class="ui medium header"> Dreamsfuture 的博客<div class="sub header" style="margin-top: 0.5rem;">If one thing was done by one person, it can be done by others!</div>
+    </div>
+    
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="归档"></i>
+      </a>
+      
+      <a class="item" href="/tags">
+        <i class="tags icon" title="所有标签"></i>
+      </a>
+      <a class="item" href="/categories">
+        <i class="th list icon" title="所有分类"></i>
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="ui attached center aligned segment dream-tags">
+    
+      <a class="ui label" href="/tags/Communication" title="Communication">Communication</a>
+    
+      <a class="ui label" href="/tags/Deep-Learning" title="Deep-Learning">Deep-Learning</a>
+    
+      <a class="ui label" href="/tags/Machine-Learning" title="Machine-Learning">Machine-Learning</a>
+    
+      <a class="ui label" href="/tags/Radar" title="Radar">Radar</a>
+    
+      <a class="ui label" href="/tags/Radio" title="Radio">Radio</a>
+    
+  </section>
+  
+
+  
+  <section class="ui attached segment dream-categories">
+    <div class="ui accordion">
+      
+      
+      
+      
+      
+
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            <a href="/categories/AI" class="item">AI</a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB%E4%B8%8EAI%E7%9A%84%E8%B5%84%E6%96%99%E5%AD%A6%E4%B9%A0/" class="item">调制分类与AI的资料学习</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/Note-2020-radar-signal-modulation-recognition-based-on-deep-joint-learning/" class="item">Notes for  paper 《radar signal modulation recognition based on deep joint learning》</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/%E6%97%A0%E7%BA%BF%E7%94%B5%E4%B8%8EAI%E7%BB%93%E5%90%88%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%AF%BC/" class="item">无线电通信与AI结合的入门指导</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/AI%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E5%90%84%E7%A7%8D%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" class="item">AI领域常用的各种算法评价指标</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            <a href="/categories/Communication" class="item">Communication</a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB%E4%B8%8EAI%E7%9A%84%E8%B5%84%E6%96%99%E5%AD%A6%E4%B9%A0/" class="item">调制分类与AI的资料学习</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/Note-2020-radar-signal-modulation-recognition-based-on-deep-joint-learning/" class="item">Notes for  paper 《radar signal modulation recognition based on deep joint learning》</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a href="/posts/%E6%97%A0%E7%BA%BF%E7%94%B5%E4%B8%8EAI%E7%BB%93%E5%90%88%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%AF%BC/" class="item">无线电通信与AI结合的入门指导</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+
+      
+    </div>
+  </section>
+  
+
+  <section class="ui attached segment header-socials">
+    <nav class="ui secondary menu dream-menu dream-socials">
+  
+    <div class="item">
+      <a href="/index.xml">
+        <i class=" rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:dreamsfuture@buaa.edu.cn">
+        <i class=" mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class="item">
+      <a href="https://github.com/dreamsfuture" target="_blank">
+        <i class=" github icon" title="GitHub"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+</nav>
+
+  </section>
+
+  <section class="ui bottom attached center aligned segment">
+    
+      <p>© 2016 - 2020 Dreamsfuture</p>
+    
+
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+  </section>
+</article>
+
+  </div>
+</div>
+
+        </section>
+        <section class="back">
+          
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="翻转！"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="首页" onclick="window.location.href = 'https:\/\/dreamsfuture.github.io'"></i>
+  </div>
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          <div class="ui centered relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">社交链接</h3>
+      </div>
+      <div class="ui attached segment">
+        <nav class="ui secondary menu dream-menu dream-socials">
+  
+    <div class="item">
+      <a href="/index.xml">
+        <i class="large rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:dreamsfuture@buaa.edu.cn">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class="item">
+      <a href="https://github.com/dreamsfuture" target="_blank">
+        <i class="large github icon" title="GitHub"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+</nav>
+
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+      <footer class="ui segment">
+        Copyright All Reserved.
+      </footer>
+    
+  </section>
+
+  
+  
+</div>
+
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GA ID', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </body>
+</html>

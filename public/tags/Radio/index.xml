@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Radio on Dreamsfuture</title>
+    <link>https://dreamsfuture.github.io/tags/Radio/</link>
+    <description>Recent content in Radio on Dreamsfuture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright All Reserved.</copyright>
+    <lastBuildDate>Sat, 01 Aug 2020 11:18:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://dreamsfuture.github.io/tags/Radio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notes for  paper 《radar signal modulation recognition based on deep joint learning》</title>
+      <link>https://dreamsfuture.github.io/posts/Note-2020-radar-signal-modulation-recognition-based-on-deep-joint-learning/</link>
+      <pubDate>Sat, 01 Aug 2020 11:18:32 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/posts/Note-2020-radar-signal-modulation-recognition-based-on-deep-joint-learning/</guid>
+      <description>A Novel Attention Cooperative Framework for Automatic Modulation Recognition basic information 项目 内容 引用格式 Chen S, Zhang Y, He Z, et al. A Novel Attention Cooperative Framework for Automatic Modulation Recognition[J]. IEEE Access, 2020: 15673-15686. 期刊水平 IEEE Access（Q1 / JCR 2） 分类 AMC 源码 评价 1、GAN扩充数据集，并且实验显示效果不错2、CCNN和BRNN提取时空特征，注意力机制融合，其实是有些老套的，但是效果还可以 Abstract 本文提出了一种基于构建</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Dreamsfuture</title>
+    <link>https://dreamsfuture.github.io/tags/</link>
+    <description>Recent content in Tags on Dreamsfuture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright All Reserved.</copyright>
+    <lastBuildDate>Mon, 03 Aug 2020 14:31:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://dreamsfuture.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Communication</title>
+      <link>https://dreamsfuture.github.io/tags/Communication/</link>
+      <pubDate>Mon, 03 Aug 2020 14:31:02 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/tags/Communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep-Learning</title>
+      <link>https://dreamsfuture.github.io/tags/Deep-Learning/</link>
+      <pubDate>Mon, 03 Aug 2020 14:31:02 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/tags/Deep-Learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine-Learning</title>
+      <link>https://dreamsfuture.github.io/tags/Machine-Learning/</link>
+      <pubDate>Sat, 01 Aug 2020 11:18:32 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/tags/Machine-Learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radar</title>
+      <link>https://dreamsfuture.github.io/tags/Radar/</link>
+      <pubDate>Sat, 01 Aug 2020 11:18:32 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/tags/Radar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radio</title>
+      <link>https://dreamsfuture.github.io/tags/Radio/</link>
+      <pubDate>Sat, 01 Aug 2020 11:18:32 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/tags/Radio/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

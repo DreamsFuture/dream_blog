@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backend on Dreamsfuture</title>
+    <link>https://dreamsfuture.github.io/categories/Backend/</link>
+    <description>Recent content in Backend on Dreamsfuture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright All Reserved.</copyright>
+    <lastBuildDate>Thu, 30 Jul 2020 19:21:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://dreamsfuture.github.io/categories/Backend/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ExcelTemplate实现输入excel模板，导出结果</title>
+      <link>https://dreamsfuture.github.io/posts/ExcelTemplate%E5%AE%9E%E7%8E%B0%E8%BE%93%E5%85%A5excel%E6%A8%A1%E6%9D%BF%E5%AF%BC%E5%87%BA%E7%BB%93%E6%9E%9C/</link>
+      <pubDate>Thu, 30 Jul 2020 19:21:23 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/posts/ExcelTemplate%E5%AE%9E%E7%8E%B0%E8%BE%93%E5%85%A5excel%E6%A8%A1%E6%9D%BF%E5%AF%BC%E5%87%BA%E7%BB%93%E6%9E%9C/</guid>
+      <description>&lt;p&gt;java 如何实现输出Excel模板，然后根据需要替换掉其中的数据，导出我们需要的Excel文件&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

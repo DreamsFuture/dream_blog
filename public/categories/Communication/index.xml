@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Communication on Dreamsfuture</title>
+    <link>https://dreamsfuture.github.io/categories/Communication/</link>
+    <description>Recent content in Communication on Dreamsfuture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright All Reserved.</copyright>
+    <lastBuildDate>Mon, 03 Aug 2020 14:31:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://dreamsfuture.github.io/categories/Communication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>调制分类与AI的资料学习</title>
+      <link>https://dreamsfuture.github.io/posts/%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB%E4%B8%8EAI%E7%9A%84%E8%B5%84%E6%96%99%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 03 Aug 2020 14:31:02 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/posts/%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB%E4%B8%8EAI%E7%9A%84%E8%B5%84%E6%96%99%E5%AD%A6%E4%B9%A0/</guid>
+      <description>1. 通信理论 1.1 博客学习 https://zhuanlan.zhihu.com/p/92102221 https://www.jianshu.com/p/bc45ce2dd8eb 2. 深度学习 https://github.com/zergtant/pytorch-handbook/blob/56026c1b0e/README.md</description>
+    </item>
+    
+    <item>
+      <title>Notes for  paper 《radar signal modulation recognition based on deep joint learning》</title>
+      <link>https://dreamsfuture.github.io/posts/Note-2020-radar-signal-modulation-recognition-based-on-deep-joint-learning/</link>
+      <pubDate>Sat, 01 Aug 2020 11:18:32 +0800</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/posts/Note-2020-radar-signal-modulation-recognition-based-on-deep-joint-learning/</guid>
+      <description>A Novel Attention Cooperative Framework for Automatic Modulation Recognition basic information 项目 内容 引用格式 Chen S, Zhang Y, He Z, et al. A Novel Attention Cooperative Framework for Automatic Modulation Recognition[J]. IEEE Access, 2020: 15673-15686. 期刊水平 IEEE Access（Q1 / JCR 2） 分类 AMC 源码 评价 1、GAN扩充数据集，并且实验显示效果不错2、CCNN和BRNN提取时空特征，注意力机制融合，其实是有些老套的，但是效果还可以 Abstract 本文提出了一种基于构建</description>
+    </item>
+    
+    <item>
+      <title>无线电通信与AI结合的入门指导</title>
+      <link>https://dreamsfuture.github.io/posts/%E6%97%A0%E7%BA%BF%E7%94%B5%E4%B8%8EAI%E7%BB%93%E5%90%88%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%AF%BC/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dreamsfuture.github.io/posts/%E6%97%A0%E7%BA%BF%E7%94%B5%E4%B8%8EAI%E7%BB%93%E5%90%88%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%AF%BC/</guid>
+      <description>学习路线 深度学习基础知识 1、机器学习及深度学习算法教程 https://www.bilibili.com/video/BV1JE411g7XF?from=search&amp;amp;seid=15810793878884134325 强推，中文版教程，推导清晰，技术介绍的非常前沿，有配套编程练习 2、pytorch基础教程 https://github.com/zergtant/pytorch-handbook 需要安装jupyter notebook，主要介绍了pytorch使用 通信方面基础知识 1、文包里面的2019综述，讲的很细致全面了，遇到</description>
+    </item>
+    
+  </channel>
+</rss>
