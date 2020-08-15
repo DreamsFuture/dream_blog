@@ -1,3 +1,3 @@
-[submodule "dream_theme"] 
-  path = dream_theme
+[submodule "themes/dream_theme"] 
+  path = themes/dream_theme
   url = https://github.com/DreamsFuture/dream_theme.git
