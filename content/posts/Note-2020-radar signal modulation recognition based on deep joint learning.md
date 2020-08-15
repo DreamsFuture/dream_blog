@@ -5,7 +5,7 @@
 title: Notes for  paper 《radar signal modulation recognition based on deep joint learning》
 date: 2020-08-01T11:18:32+08:00
 lastmod: 2020-08-01T11:18:32+08:00
-author: Dreamsfuture
+author: wang Hongyu
 authorlink: https://dreamsfutureblog.utools.club
 # cover: /img/performance_indexes.jpg
 background: img/background.jpg

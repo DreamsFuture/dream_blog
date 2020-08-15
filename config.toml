@@ -4,7 +4,7 @@ defaultContentLanguage = "zh"
 
 title = "Dreamsfuture"
 
-theme = "dream"
+theme = "dream_theme"
 googleAnalytics = "GA ID"  # UA-XXXXXXXX-X
 
 ## 保持分类的原始名字（false会做转小写处理）

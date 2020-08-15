@@ -5,7 +5,7 @@ title: 无线电通信与AI结合的入门指导
 date: 2020-08-01
 # date: 2020-08-01T11:18:32+08:00
 # lastmod: 2020-08-01T11:18:32+08:00
-author: Dreamsfuture
+author: Wang Hongyu
 # authorlink: https://author.site
 # cover: /img/performance_indexes.jpg
 categories: ["AI", "Communication"]
